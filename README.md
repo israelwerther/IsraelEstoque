@@ -16,7 +16,9 @@ cd IsraelEstoque.
 virtualenv --python=python3 venv.
 source venv/bin/activate.
 pip isntall -r requirements.txt.
-python contrib/env_gen.py.
+python contrib/env_gen.py    (cria arquivo .env aleatoriamento toda vez que roda o comando). 
 python manage.py migrate.
+
+
 
 ```
