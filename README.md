@@ -19,6 +19,4 @@ pip isntall -r requirements.txt.
 python contrib/env_gen.py    (cria arquivo .env aleatoriamento toda vez que roda o comando). 
 python manage.py migrate.
 
-
-
 ```
