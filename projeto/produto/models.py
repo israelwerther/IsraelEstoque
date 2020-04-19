@@ -3,7 +3,7 @@ from django.db import models
 class Produto(models.Model):
     importado      = models.BooleanField(default=False)
     ncm            = models.CharField("NCM", max_length=8)
-    produto        = models.CharField("", max_length=100, unique=True)
+    produto        = models.CharField("Produto", max_length=100, unique=True)
     preco          = models.DecimalField("Preço", max_digits=7, decimal_places=2)
     estoque        = models.IntegerField("Estoque atual")
     estoque_minimo = models.PositiveIntegerField("Estoque mínimo", default=0)
