@@ -7,11 +7,10 @@ class EstoqueItensInline(admin.TabularInline):
     extra = 0
     
     
-    
 @admin.register(Estoque)
 class EstoqueAdmin(admin.ModelAdmin):
     inlines = (EstoqueItensInline,) 
-    list_display = ('__str__', 'nf')
+    list_display = ('__str__', 'nf', 'funcionario',)
     search_display = ('nf',)
     list_filter = ('funcionario',)
     date_hierarchy = 'created'

@@ -17,7 +17,10 @@ class Estoque(TimeStampedModel):
         ordering = ('-created',)
     
     def __str__(self):
-        return str(self.pk) #converter pra str evita o erro que estou tendo no outro projeto
+        return '{} - {} - {}'.format(self.pk, self.nf, self.created.strftime('%d-%m-%Y'))
+        # return str(self.pk) #converter pra str evita o erro que estou tendo no outro projeto
+    def nf_formated(self):
+        return str(self.nf).zfill(3) #zfill coloca zeros à esquerda donumero(lembrando que tem que ser uma string)
     
 class EstoqueItens(models.Model):
     estoque    = models.ForeignKey(Estoque, on_delete=models.CASCADE)
