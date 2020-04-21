@@ -36,3 +36,5 @@ python manage.py migrate.
 [django-widget-tweaks](https://github.com/jazzband/django-widget-tweaks)
 
 [Class Based View - ccbv.co.uk](https://ccbv.co.uk/)
+
+[django-bootstrap-form](https://django-bootstrap-form.readthedocs.io/en/latest/)

@@ -29,7 +29,8 @@ class Estoque(TimeStampedModel):
         #zfill coloca zeros à esquerda donumero(lembrando que tem que ser uma string)
     
 class EstoqueItens(models.Model):
-    estoque    = models.ForeignKey(Estoque, 
+    estoque    = models.ForeignKey(
+        Estoque, 
         on_delete=models.CASCADE, 
         related_name='estoques' #OBS:estoques
     )
