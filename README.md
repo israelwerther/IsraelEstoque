@@ -37,4 +37,9 @@ python manage.py migrate.
 
 [Class Based View - ccbv.co.uk](https://ccbv.co.uk/)
 
+[form-inline](http://felipefrizzo.github.io/post/form-inline/)
+
+[form-inline-cbv](http://felipefrizzo.github.io/post/form-inline-cbv/)
+
 [django-bootstrap-form](https://django-bootstrap-form.readthedocs.io/en/latest/)
+
